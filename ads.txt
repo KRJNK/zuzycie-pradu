@@ -1,0 +1,2 @@
+# TODO (przed AdSense): wstaw linię z https://www.google.com/adsense/
+# google.com, pub-TWOJ-ID, DIRECT, f08c47fec0942fa0

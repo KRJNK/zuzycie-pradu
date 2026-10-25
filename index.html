@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ile prądu zużywa? Koszt urządzeń</title>
+<meta name="description" content="Policz ile kosztuje prąd dla Twoich urządzeń: moc × godziny × cena kWh. Miesięcznie i rocznie.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔌</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <!-- TODO: link do portfolio, gdy powstanie -->
+  <h1>Prądożercy</h1>
+  <p>Ile kosztuje Cię każde urządzenie? Wpisz moc z tabliczki.</p>
+  <section class="card">
+    <div id="rows"></div>
+    <p><button id="add" type="button">+ Dodaj urządzenie</button>
+    <label>Cena kWh (zł) <input id="kwh" type="number" min="0" step="any" value="1.15" style="width:5em"></label></p>
+  </section>
+  <section class="card">
+    <h2>Razem miesięcznie</h2>
+    <div id="out" class="big">—</div>
+    <p id="detail" class="hint"></p>
+  </section>
+  <section class="card">
+    <h2>Jak to działa</h2>
+    <p>Moc w watach razy godziny działania dziennie daje watogodziny, dzielimy przez 1000 (kilowatogodziny) i mnożymy przez cenę z rachunku oraz 30 dni. Tryb czuwania (standby) liczy się tak samo — ładowarka 5 W całą dobę to ok. 4 zł miesięcznie za nic.</p>
+    <p><strong>Przykład:</strong> klimatyzator 1500 W po 6 h dziennie przy 1,15 zł/kWh to ok. 310 zł miesięcznie. Stary żarówkowy żyrandol 5×60 W świecący 4 h dziennie — ok. 41 zł miesięcznie; same LED-y zejdą do ok. 5 zł.</p>
+  </section>
+  <div id="ads-slot" hidden></div>
+  <footer><a href="privacy.html">Prywatność</a> · <a href="kontakt.html">Kontakt</a></footer>
+</main>
+<script src="app.js"></script>
+<script src="ads.js"></script>
+</body>
+</html>
